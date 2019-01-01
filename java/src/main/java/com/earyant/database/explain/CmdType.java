@@ -3,6 +3,7 @@ package com.earyant.database.explain;
 public enum CmdType {
     createTable(0),
     createDb(1),
+    insertData(2),
     ;
 
     Integer value;
