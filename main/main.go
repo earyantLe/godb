@@ -15,6 +15,9 @@ func runShell(dbName string, cmd string) {
 	//  shell执行层
 	if cmdType == createDb {
 		//	 创建数据库目录
+		if DirExist(dbName) {
+			//return  errors.New("math: square root of negative number")
+		}
 	} else if cmdType == createTable {
 		//创建表目录
 
