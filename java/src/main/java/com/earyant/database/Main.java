@@ -9,15 +9,18 @@ import com.earyant.database.explain.service.impl.ExplainServiceImpl;
 
 import java.util.Objects;
 
+/**
+ * @author lirui23
+ */
 public class Main {
     public static void main(String[] args) {
         String dbName = "db";
 
         //String cmd = "CREATE DATABASE " + dbName;
         //runShell(dbName, cmd);
-        String createTableCmd = "CREATE TABLE `feature_conf` (\n          `id` varchar(255) DEFAULT NULL,\n          " +
-                "PRIMARY KEY (`id`)\n)";
-        runShell(dbName, createTableCmd);
+        //String createTableCmd = "CREATE TABLE `feature_conf` (\n          `id` varchar(255) DEFAULT NULL,\n          " +
+        //        "PRIMARY KEY (`id`)\n)";
+        //runShell(dbName, createTableCmd);
 
         String insertCmd = "INSERT INTO feature_conf values(1)";
         runShell(dbName, insertCmd);
